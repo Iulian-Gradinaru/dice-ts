@@ -6,7 +6,7 @@ import { styled } from '@mui/system';
 /**
  * Styles the RollDice
  */
-export const ThrowDice = styled('div')(() => {
+export const Container = styled('div')(() => {
   return {
     display: 'flex',
     flexFlow: 'column nowrap',
@@ -14,7 +14,7 @@ export const ThrowDice = styled('div')(() => {
   };
 });
 
-export const Container = styled('div')(() => {
+export const DiceContainer = styled('div')(() => {
   return {
     display: 'flex',
     justifyContent: 'center',
@@ -28,9 +28,9 @@ export const ThrowDiceButton = styled('button')(() => {
     width: '15em',
     padding: '1.5em',
     fontize: '1em',
-    border: ' 0px',
+    border: '0px',
     borderRadius: '10px',
-    color: ' white',
+    color: 'white',
     backgroundColor: 'black',
     marginTop: '3em',
     '&:hover': {

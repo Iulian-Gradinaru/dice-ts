@@ -9,7 +9,7 @@ import { Dice } from '../Dice';
  * Imports styles
  */
 
-import { ThrowDice, Container, ThrowDiceButton } from './RollDice.styles';
+import { DiceContainer, Container, ThrowDiceButton } from './RollDice.styles';
 
 /**
  * Imports Types
@@ -66,15 +66,15 @@ export const RollDice: React.FC = () => {
   };
 
   return (
-    <ThrowDice className="RollDice">
-      <Container className="RollDice-container">
+    <Container className="RollDice">
+      <DiceContainer className="RollDice-container">
         <Dice face={die1} rolling={rolling} />
         <Dice face={die2} rolling={rolling} />
-      </Container>
+      </DiceContainer>
 
       <ThrowDiceButton className="Button" onClick={roll} disabled={rolling}>
         {rolling ? 'Rolling...' : 'Roll Dice!'}
       </ThrowDiceButton>
-    </ThrowDice>
+    </Container>
   );
 };
