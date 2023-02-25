@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 /**
  * Imports components
@@ -64,13 +64,6 @@ export const RollDice: React.FC = () => {
       setRolling(false);
     }, 1000);
   };
-
-  /**
-   * When the component mounts, we'll initialize the roll
-   */
-  useEffect(() => {
-    roll();
-  }, []);
 
   return (
     <ThrowDice className="RollDice">
